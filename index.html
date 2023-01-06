@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>Donut Clicker</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="donut-maker-app.js" defer></script>
+    <script src="donut-maker.js" defer></script>
   </head>
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <nav>
+      <header class="modalContainer">
+        <img src="images\13-136257_doughnut-drawing-pastry-donut-png.webp" alt="">
+        <div class="headerBtn">
+          <button id="modalBtnOne">Fred The Baking Company</button>
+          <button><a href="https://orteil.dashnet.org/cookieclicker/">Inspiration For The Game,</a><br>Cookie Clicker</button>
+          <button id="modalBtnTwo">Developer Info</button>
+        </div>
+      </header>
+    </nav>
+
+    <div id="modal" class="myModal">
+      <div class="modalContent">
+        <span class="close">&times;</span>
+        <p>Fred the Baker is tired of making real donuts and is ready to retire. He needs our help to keep his love of donuts alive. He wants you to create a game that uses button clicks to create virtual donuts for the world to enjoy. But all those early mornings of donut making may have tired out his brain because he has some strange requirements for 'Auto Clickers' and 'Donut Multipliers'.</p>
+      </div>
+    </div>
+
+    <div id="modalTwo" class="myModalTwo">
+      <div class="modalContentTwo">
+        <span class="closeTwo">&times;</span>
+        <p>Hello, my name is Wolfgang Ashcraft and I am currently enrolled in the Part-Time Java cohort at We Can Code It. I have linked my portfolio to learn more about me and other projects I have created during my Part-Time Java cohort. </p>
+        <button class="portButton"><a href="https://wolfganga1.github.io/">Portfolio</a></button>
+      </div>
+    </div>
+
+    <div class="mainContent">
+      <h1>Donut Clicker</h1>
+      <div class="donutCount">
+        <h3 id="Donut-Count"></h3>
+      </div>
+      <div class="donutClickCount">
+        <h3 id="Click-Value"></h3>
+        <button id="Main-Click__Button">Click Me</button>
+      </div>
+      <div>
+        <div class="AutoClicker__Section">
+          <h3 id="AutoClicker-Cost"></h3>
+          <h3 id="AutoClicker-Count"></h3>
+          <button id="AutoClickerBuy-Click__Button" disabled>Buy Auto Clicker</button>
+        </div>
+        
+        <div class="Multiplier__Section">
+          <h3 id="Multiplier-Cost"></h3>
+          <h3 id="Multiplier-Count"></h3>
+          <button id="MultiplierBuy-Click__Button" disabled>Buy Multiplier</button>
+        </div>
+        </div>
+        <div id="Restart__Section">
+          <button id="Restart-Click__Button">Restart</button>
+        </div>
+      </div> 
+      <footer>
+        <div class="footerContent">
+          <h3>Fred The Baking Company</h3>
+          <p>Never had donuts from Fred's Bakery before? Well you are in luck, you can get our tasty donuts in house or delivered to you!</p>
+        </div>
+        <div class="footerBottom">
+          <p>Copyright &copy;2022 Donut Clicker. designed by <span>Wolfgang Ashcraft</span></p>
+        </div>
+      </footer>
   </body>
 </html>
